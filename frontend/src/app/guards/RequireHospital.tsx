@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { Navigate } from "react-router-dom";
 import { useAuthContext } from "../providers/AuthProvider";
-import { ROUTES } from "@/shared/constants/routes";
+import { ROUTES } from "@/shared/constants";
 
 interface RequireHospitalProps {
   children: ReactNode;
