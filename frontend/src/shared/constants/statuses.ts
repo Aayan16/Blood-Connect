@@ -1,0 +1,17 @@
+export const REQUEST_STATUSES = {
+  MATCHING: "Matching",
+  DONOR_ACCEPTED: "Donor Accepted",
+  BLOOD_RECEIVED: "Blood Received",
+  COMPLETED: "Completed",
+  CANCELLED: "Cancelled",
+} as const;
+
+export type RequestStatus = (typeof REQUEST_STATUSES)[keyof typeof REQUEST_STATUSES];
+
+export const REQUEST_STATUS_LIST: RequestStatus[] = [
+  REQUEST_STATUSES.MATCHING,
+  REQUEST_STATUSES.DONOR_ACCEPTED,
+  REQUEST_STATUSES.BLOOD_RECEIVED,
+  REQUEST_STATUSES.COMPLETED,
+  REQUEST_STATUSES.CANCELLED,
+];
